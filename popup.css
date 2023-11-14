@@ -1,0 +1,87 @@
+/* popup.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+}
+
+.popup-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popup-header h1 {
+    color: #0052cc;
+    font-size: 24px;
+}
+
+.textarea-container {
+    margin-bottom: 20px;
+}
+
+.textarea-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 100px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+    resize: vertical;
+    background-color: #f9f9f9;
+}
+
+.btn {
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #0052cc;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #003d99;
+}
+
+/* Responsive adjustments for very small screens */
+@media (max-width: 800px) {
+    .container {
+        margin: 0;
+        width: 780px;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 10px;
+    }
+}

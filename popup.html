@@ -1,0 +1,32 @@
+<!--popup.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail AI Reply Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header class="popup-header">
+          <h1>Gmail AI Reply Assistant</h1>
+        </header>
+        <button id="get-email-content" class="btn">Get Email Content</button>
+        <div class="textarea-container">
+          <label for="email-content">Email Content:</label>
+          <textarea id="email-content" placeholder="Email content will appear here..." readonly></textarea>
+        </div>
+    <div class="textarea-container">
+      <label for="user-suggestion">Your Suggestion:</label>
+      <textarea id="user-suggestion" placeholder="Enter your suggestion for the AI reply here..."></textarea>
+    </div>
+    <button id="generate-reply" class="btn">Generate AI Reply</button>
+    <div class="textarea-container">
+      <label for="ai-generated-reply">AI-generated Reply:</label>
+      <textarea id="ai-generated-reply" placeholder="AI-generated reply will appear here..." readonly></textarea>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
